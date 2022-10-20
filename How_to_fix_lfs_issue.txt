@@ -1,0 +1,4 @@
+
+git lfs track YOUR-FILE-NAME-THAT-IS-TOO-BIG
+
+git lfs migrate import
