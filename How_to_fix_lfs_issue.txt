@@ -1,4 +1,20 @@
+How to add a large file(Use the map as example):
 
-git lfs track YOUR-FILE-NAME-THAT-IS-TOO-BIG
+1, git lfs track Content/SHINTO_Content/levels/base_Level_new_start.umap
 
-git lfs migrate import
+this step add the map to the tracking ,but did not update the whole history. so to add the tracking to the whole history:
+
+2, git lfs migrate import --include=Content/SHINTO_Content/levels/base_Level_new_start.umap
+
+this will make sure the history is updated.
+
+Done.
+
+#####################################################################################
+
+if need to clear lfs tracking:
+1, used git lfs fetch to fetch the pointers into actual files
+2, use git lfs untrack "*.*" to untrack all files
+3, use git rm --cached "*.*" to remove the history
+4, git add -A, and git commit -m to update the change.
+Step 1 - 4 will remove all lfs tracking
