@@ -8,6 +8,8 @@ this step add the map to the tracking ,but did not update the whole history. so 
 
 this will make sure the history is updated.
 
+3, if the file you pulled down is 1kb, use - git lfs fetch
+
 Done.
 
 #####################################################################################
